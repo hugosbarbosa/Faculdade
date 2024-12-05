@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1> Pedido Pizza </h1>
+
+    <form method="get"action="test.php">
+         <h3>Nome: </h3>   <input type="text" name="nome"> <br>
+
+         <h3>E-mail:</h3>
+         <input type="email" name="email"> <br>
+
+         <h3>Tamanho da Pizza</h3><input type="radio" name="TamPizza" value="g"> Grande
+
+         <input type="radio" name="TamPizza" value="m"> Médio
+
+         <input type="radio" name="TamPizza" value="p"> Pequeno
+         <br>
+
+         <h3>Sabor</h3> 
+         <select name="sabor" id="sabor"> 
+            <option> Calabresa </option>
+            <option> Portuguesa </option>
+            <option> 4 Queijos </option>
+            <br>
+         </select>
+
+         <h3>Adicionais</h3>
+            
+         <input type="checkbox" name="bordas" value="sim"> Borda Recheada -  Queijo
+
+         <input type="checkbox" name="bordas" value="sim"> Borda Recheada -  Chocolate
+
+         <input type="checkbox" name="bordas" value="sim"> Borda Recheada -  Cheddar
+
+
+         <h3>Agendar Entrega</h3>
+         <input type="date" name="entrega" id="">
+
+         <h3>Observações:</h3>
+         <textarea name="obs" rows="5" cols="30"></textarea>
+
+         <br>
+         <br>
+
+         <input type="submit" name="enviar" value="Enviar Formulario">
+
+    </form>
+
+</body>
+</html>
